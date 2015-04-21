@@ -14,7 +14,7 @@ namespace FizzBuzzTests
 
         public NumberGenerator PositiveNumbers()
         {
-            Numbers = Numbers.Where(n => n > 0);
+            Numbers = Numbers.Where(n => n >= 0);
             return this;
         }
 
