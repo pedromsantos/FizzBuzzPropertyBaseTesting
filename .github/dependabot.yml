@@ -1,0 +1,28 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: FsCheck
+    versions:
+    - 2.14.3
+    - 2.14.4
+    - 2.14.5
+    - 2.14.6
+    - 2.15.0
+    - 2.15.1
+  - dependency-name: FsCheck.Nunit
+    versions:
+    - 2.14.3
+    - 2.14.4
+    - 2.14.5
+    - 2.14.6
+    - 2.15.0
+    - 2.15.1
+  - dependency-name: NUnit
+    versions:
+    - 3.13.0
+    - 3.13.1
